@@ -60,7 +60,7 @@ async function fetchHistoryData(count) {
     const options = {
         method: "GET",
         headers: {
-            "Referer": "http://www.cwl.gov.cn/kjxx/wqkj/"
+            Referer: "http://www.cwl.gov.cn/kjxx/wqkj/"
         }
     };
     const url = "http://www.cwl.gov.cn/cwl_admin/kjxx/findDrawNotice?" + params;

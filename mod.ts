@@ -24,9 +24,7 @@ const redPool = pool.red.map((val) =>
   buildRandomNumberPool(calcWeight(val, 33))
 );
 const bluePool = buildRandomNumberPool(calcWeight(pool.blue, 16));
-const totalRedPool = buildRandomNumberPool(
-  calcWeight(pool.red.flat(), 33),
-);
+const totalRedPool = buildRandomNumberPool(calcWeight(pool.red.flat(), 33));
 const one = await genNumbers(redPool, bluePool);
 const two = await genNumbers(new Array(6).fill(totalRedPool), bluePool);
 
